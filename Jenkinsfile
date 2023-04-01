@@ -7,8 +7,8 @@ pipeline{
       }}
     stage('run'){
       steps{
-     sh '''npm pack
-npm start'''
+     sh '''javac index.java
+java index'''
       }}
   }
 }
