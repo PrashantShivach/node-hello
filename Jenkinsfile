@@ -11,4 +11,25 @@ pipeline{
 java index'''
       }}
   }
+  post{
+        
+        
+          
+        success{
+        
+        
+          
+            mail to: "prashant.shivach@knoldus.com",
+        
+        
+          
+            subject: "Build is successfull",
+        
+        
+          
+            body: "success"
+        
+        
+        }
+        }
 }
