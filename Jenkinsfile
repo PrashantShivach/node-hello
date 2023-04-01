@@ -2,11 +2,11 @@ pipeline{
   agent any
   stages{
     stage('clone'){
-      step{
+      steps{
       git branch: 'testing', url: 'https://github.com/PrashantShivach/node-hello.git'
       }}
-    stage(run){
-      step{
+    stage('run'){
+      steps{
      sh '''npm pack
 npm start'''
       }}
