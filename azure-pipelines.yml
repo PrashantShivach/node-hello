@@ -1,0 +1,21 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- development
+
+pool: rupali1520
+
+steps:
+- task: NodeTool@0
+  displayName: 'install'
+  inputs:
+    versionSource: 'spec'
+    versionSpec: '6.x'
+
+- script: |
+    npm pack 
+    npm start
+  displayName: 'Run '
