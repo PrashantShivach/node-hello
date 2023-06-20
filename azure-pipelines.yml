@@ -6,7 +6,7 @@
 trigger:
 - development
 
-pool: rupali1520
+pool: myubuntuagentpool
 
 steps:
 - task: NodeTool@0
