@@ -4,7 +4,9 @@
 # https://aka.ms/yaml
 
 trigger:
-- development
+branches:
+    include:
+    - refs/heads/development
 
 pool: prashant
 
