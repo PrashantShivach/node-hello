@@ -1,3 +1,4 @@
+#skdgsdkj
 FROM node:12
 
 # Create app directory
