@@ -18,6 +18,7 @@ steps:
     versionSpec: '6.x'
 
 - script: |
-    npm pack 
-    npm start
-  displayName: 'Run '
+    npm install
+    npm version 1.0.$(Build.BuildId)
+    npm publish
+  displayName: 'install and publishing'
